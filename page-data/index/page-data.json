@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-index-js",
+    "path": "/",
+    "result": {"data":{"posts":{"edges":[{"node":{"id":"-3eb6f0e3-3d4b-5f56-b98a-9cf52653d241","publishedAt":null,"title":"First Post","slug":{"current":"first-post"}}}]}},"pageContext":{}},
+    "staticQueryHashes": []}
