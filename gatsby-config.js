@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: `https://www.yourdomain.tld`
   },
+  pathPrefix: "/testing-sanity",
   plugins: [{
     resolve: 'gatsby-source-sanity',
     options: {
