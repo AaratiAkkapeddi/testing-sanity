@@ -1,5 +1,24 @@
 import * as React from "react"
-
+import { graphql } from "gatsby";
+export const query = graphql`
+query IndexPageQuery {
+    posts: allSanityPost(
+      limit: 6
+      sort: { fields: [publishedAt], order: DESC }
+    ) {
+      edges {
+        node {
+          id
+          publishedAt
+          title
+          slug {
+            current
+          }
+        }
+      }
+    }
+  }
+`
 // styles
 const pageStyles = {
   color: "#232129",
@@ -126,12 +145,14 @@ const links = [
 ]
 
 // markup
-const IndexPage = () => {
+const IndexPage = (props) => {
+  const { data, errors } = props;
+
   return (
     <main style={pageStyles}>
       <title>Home Page</title>
       <h1 style={headingStyles}>
-        Congratulations
+     {data.posts.edges[0].node.title}
         <br />
         <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
         <span role="img" aria-label="Party popper emojis">
