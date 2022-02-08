@@ -8,8 +8,9 @@
     "gatsby"
   ],
   "scripts": {
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "npm run cleanup && gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
+    "cleanup": "rm -rf node_modules/gh-pages/.cache",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
