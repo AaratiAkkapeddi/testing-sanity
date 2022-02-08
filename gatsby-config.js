@@ -9,7 +9,7 @@ module.exports = {
       "projectId": "o71h7ksx",
       "dataset": ""
     }
-  }, "gatsby-plugin-image", "gatsby-transformer-remark", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  }, "gatsby-plugin-image", "gatsby-transformer-remark", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
